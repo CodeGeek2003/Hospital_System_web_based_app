@@ -1,0 +1,41 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+#navbar {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    justify-content: left;
+    background-color: rgba(0,0,0,0.5);
+}
+
+    #navbar a {
+        margin: 10px 10px;
+        gap: auto;
+    }
+
+        #navbar a:hover {
+            background-color: rgba(0,0,0,0.6);
+            color: #ffffff;
+        }
+
+#home, #contact, #about {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    color: #000;
+}
