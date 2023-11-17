@@ -67,9 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Hospital_Database.mdf" />
+    <Content Include="App_Data\Hospital_Database_log.ldf">
+      <DependentUpon>Hospital_Database.mdf</DependentUpon>
+    </Content>
     <Content Include="images\devices.jpeg" />
     <Content Include="images\home_bg.jpg" />
     <Content Include="images\Nada’s-PhotoRoom.png-PhotoRoom.png" />
+    <Content Include="images\patient.png" />
     <Content Include="images\staff.jpg" />
     <Content Include="images\surgery.jpg" />
     <Content Include="index.html" />
