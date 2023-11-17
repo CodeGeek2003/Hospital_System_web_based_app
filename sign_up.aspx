@@ -83,7 +83,9 @@
                     <td class="auto-style13">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txbFname" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style3"></td>
+                    <td class="auto-style3">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txbFname" Display="Dynamic" ErrorMessage="Enter a Correct Name" Font-Bold="True" ForeColor="#FF3300" ValidationExpression="^[A-Z][a-z]+(?:\s[A-Z][a-z]+)?$"></asp:RegularExpressionValidator>
+                    </td>
                     <td class="auto-style3"></td>
                 </tr>
                 <tr>
@@ -96,7 +98,9 @@
                     <td class="auto-style13">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txbLname" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style3"></td>
+                    <td class="auto-style3">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txbLname" Display="Dynamic" ErrorMessage="Enter a Correct Name" Font-Bold="True" ForeColor="#FF3300" ValidationExpression="^[A-Z][a-z]+(?:\s[A-Z][a-z]+)?$"></asp:RegularExpressionValidator>
+                    </td>
                     <td class="auto-style3"></td>
                 </tr>
                 <tr>
@@ -125,7 +129,9 @@
                     <td class="auto-style15">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txbEmail" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style12"></td>
+                    <td class="auto-style12">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txbEmail" Display="Dynamic" ErrorMessage="Enter Correct Email Format" Font-Bold="True" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                    </td>
                     <td class="auto-style12"></td>
                 </tr>
                 <tr>
@@ -136,7 +142,9 @@
                         <asp:TextBox ID="txbPhone" runat="server" Width="208px"></asp:TextBox>
                     </td>
                     <td class="auto-style14">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txbPhone" Display="Dynamic" ErrorMessage="Enter Correct Phone Format" Font-Bold="True" ForeColor="#FF3300" ValidationExpression="^\+(2010|2011|2012|2015)\d{8}$"></asp:RegularExpressionValidator>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
