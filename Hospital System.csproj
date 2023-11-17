@@ -67,7 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\devices.jpeg" />
+    <Content Include="images\home_bg.jpg" />
     <Content Include="images\Nada’s-PhotoRoom.png-PhotoRoom.png" />
+    <Content Include="images\staff.jpg" />
+    <Content Include="images\surgery.jpg" />
     <Content Include="index.html" />
     <Content Include="sign_in.aspx" />
     <Content Include="style.css" />

@@ -15,7 +15,7 @@ a {
     align-items: left;
     justify-content: center;
     justify-content: left;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
     #navbar a {
@@ -24,11 +24,14 @@ a {
     }
 
         #navbar a:hover {
-            background-color: rgba(0,0,0,0.6);
+            background-color: rgba(0, 0, 0, 0.6);
             color: #ffffff;
         }
 
-#home, #contact, #about {
+#home,
+#contact,
+#about,
+#content {
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -39,3 +42,93 @@ a {
     background-color: #f0f0f0;
     color: #000;
 }
+
+#home {
+    background: url("images/home_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+    #home h1 {
+        font-size: 3em;
+        margin-bottom: 0px;
+        font-weight: 300;
+        color: #ffffff;
+        text-shadow: 2px 2px 20px rgba(0, 0, 0);
+    }
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #008080;
+}
+
+    #content h2 {
+        font-size: 2em;
+        margin-bottom: 0px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+    }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 500px; /* Increased width */
+    padding: 40px; /* Increased padding */
+    margin: 0px 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 14px;
+        color: #333;
+    }
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#contact {
+    background-color: teal;
+    padding: 20px;
+    color: white;
+}
+
+    #contact h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    #contact p {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    #contact a {
+        color: white;
+    }
+
+        #contact a:hover {
+            color: #000000;
+        }
