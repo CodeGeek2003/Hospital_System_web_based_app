@@ -78,13 +78,13 @@
                         <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="First Name"></asp:Label>
                     </td>
                     <td class="auto-style8">
-                        <asp:TextBox ID="txbFname" runat="server" Width="208px"></asp:TextBox>
+                        <asp:TextBox ID="txtFname" runat="server" Width="208px"></asp:TextBox>
                     </td>
                     <td class="auto-style13">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txbFname" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtFname" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style3">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txbFname" Display="Dynamic" ErrorMessage="Enter a Correct Name" Font-Bold="True" ForeColor="#FF3300" ValidationExpression="^[A-Z][a-z]+(?:\s[A-Z][a-z]+)?$"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtFname" Display="Dynamic" ErrorMessage="Enter a Correct Name" Font-Bold="True" ForeColor="#FF3300" ValidationExpression="^[A-Z][a-z]+(?:\s[A-Z][a-z]+)?$"></asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style3"></td>
                 </tr>
@@ -93,13 +93,13 @@
                         <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="Last Name"></asp:Label>
                     </td>
                     <td class="auto-style8">
-                        <asp:TextBox ID="txbLname" runat="server" Width="208px"></asp:TextBox>
+                        <asp:TextBox ID="txtlname" runat="server" Width="208px"></asp:TextBox>
                     </td>
                     <td class="auto-style13">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txbLname" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtlname" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style3">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txbLname" Display="Dynamic" ErrorMessage="Enter a Correct Name" Font-Bold="True" ForeColor="#FF3300" ValidationExpression="^[A-Z][a-z]+(?:\s[A-Z][a-z]+)?$"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtlname" Display="Dynamic" ErrorMessage="Enter a Correct Name" Font-Bold="True" ForeColor="#FF3300" ValidationExpression="^[A-Z][a-z]+(?:\s[A-Z][a-z]+)?$"></asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style3"></td>
                 </tr>
@@ -121,17 +121,16 @@
                 </tr>
                 <tr>
                     <td class="auto-style10">
-                        <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="Email"></asp:Label>
+                        <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="Address"></asp:Label>
                     </td>
                     <td class="auto-style11">
-                        <asp:TextBox ID="txbEmail" runat="server" Width="208px"></asp:TextBox>
+                        <asp:TextBox ID="txtAdd" runat="server" Width="208px"></asp:TextBox>
                     </td>
                     <td class="auto-style15">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txbEmail" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtAdd" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style12">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txbEmail" Display="Dynamic" ErrorMessage="Enter Correct Email Format" Font-Bold="True" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style12"></td>
                 </tr>
                 <tr>
@@ -139,72 +138,65 @@
                         <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="Phone Number"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txbPhone" runat="server" Width="208px"></asp:TextBox>
+                        <asp:TextBox ID="txtPhone" runat="server" Width="208px"></asp:TextBox>
                     </td>
-                    <td class="auto-style14">&nbsp;</td>
+                    <td class="auto-style14">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="txtPhone" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                    </td>
                     <td>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txbPhone" Display="Dynamic" ErrorMessage="Enter Correct Phone Format" Font-Bold="True" ForeColor="#FF3300" ValidationExpression="^\+(2010|2011|2012|2015)\d{8}$"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtPhone" Display="Dynamic" ErrorMessage="Enter Correct Phone Format" Font-Bold="True" ForeColor="#FF3300" ValidationExpression="^\+(2010|2011|2012|2015)\d{8}$"></asp:RegularExpressionValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style6">
-                        <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="Country"></asp:Label>
+                        <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="Date of Birth"></asp:Label>
                     </td>
                     <td class="auto-style9">
-                        <asp:DropDownList ID="ddlCountry" runat="server">
-                            <asp:ListItem>Egypt</asp:ListItem>
-                            <asp:ListItem>France</asp:ListItem>
-                            <asp:ListItem>Spain</asp:ListItem>
-                            <asp:ListItem>United States </asp:ListItem>
-                            <asp:ListItem>United Kingdoms</asp:ListItem>
-                        </asp:DropDownList>
+                        <asp:TextBox ID="txtDob" runat="server" Width="208px"></asp:TextBox>
                     </td>
                     <td class="auto-style16">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="ddlCountry" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtDob" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style2"></td>
+                    <td class="auto-style2">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtDob" ErrorMessage="Enter Correct Date Format" Font-Bold="True" ForeColor="Red" ValidationExpression="^\d{4}-\d{2}-\d{2}$"></asp:RegularExpressionValidator>
+                    </td>
                     <td class="auto-style2"></td>
                 </tr>
                 <tr>
                     <td class="auto-style6">
-                        <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="Username"></asp:Label>
+                        <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="SSN"></asp:Label>
                     </td>
                     <td class="auto-style9">
-                        <asp:TextBox ID="txbUser" runat="server" Width="208px"></asp:TextBox>
+                        <asp:TextBox ID="txtSSN" runat="server" Width="208px"></asp:TextBox>
                     </td>
                     <td class="auto-style16">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txbUser" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtSSN" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                 </tr>
                 <tr>
                     <td class="auto-style10">
-                        <asp:Label ID="Label8" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="Password"></asp:Label>
+                        <asp:Label ID="Label8" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="Room Number"></asp:Label>
                     </td>
                     <td class="auto-style11">
-                        <asp:TextBox ID="txbPassword" runat="server" TextMode="Password" Width="206px" ></asp:TextBox>
+                        <asp:TextBox ID="txtRn" runat="server" Width="208px"></asp:TextBox>
                     </td>
                     <td class="auto-style15">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txbPassword" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
-                    </td>
-                    <td class="auto-style12"></td>
+                        P.S please note the current avilable room number is 10</td>
+                    <td class="auto-style12">&nbsp;</td>
                     <td class="auto-style12"></td>
                 </tr>
                 <tr>
                     <td class="auto-style4">
-                        <asp:Label ID="Label9" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#336699" Text="Retype password"></asp:Label>
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txbRePassword" runat="server"  TextMode="Password" Width="208px"></asp:TextBox>
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style14">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txbRePassword" ErrorMessage="This Field is Requird" Font-Bold="True" ForeColor="#FF3300"></asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                     <td>
-                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txbPassword" ControlToValidate="txbRePassword" ErrorMessage="The Password Doesnt Match" Font-Bold="True" ForeColor="#FF3300">The Password Doesnt Match</asp:CompareValidator>
-                    </td>
+                        &nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>

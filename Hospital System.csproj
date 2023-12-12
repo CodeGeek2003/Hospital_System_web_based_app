@@ -71,6 +71,10 @@
     <Content Include="App_Data\Hospital_Database_log.ldf">
       <DependentUpon>Hospital_Database.mdf</DependentUpon>
     </Content>
+    <Content Include="doctor_home.aspx" />
+    <Content Include="doctor_viewPatients.aspx" />
+    <Content Include="hospitalManager_home.aspx" />
+    <Content Include="hospitalManager_viewStaff.aspx" />
     <Content Include="images\devices.jpeg" />
     <Content Include="images\home_bg.jpg" />
     <Content Include="images\Nada’s-PhotoRoom.png-PhotoRoom.png" />
@@ -78,12 +82,126 @@
     <Content Include="images\staff.jpg" />
     <Content Include="images\surgery.jpg" />
     <Content Include="index.html" />
+    <Content Include="Nurse_home.aspx" />
+    <Content Include="nurse_viewPatient.aspx" />
+    <Content Include="patient_Home.aspx" />
+    <Content Include="patient_view_doctor.aspx" />
+    <Content Include="pharmacist_home.aspx" />
+    <Content Include="pharmacist_viewMedicine.aspx" />
     <Content Include="sign_in.aspx" />
+    <Content Include="sign_in_patient.aspx" />
     <Content Include="style.css" />
+    <Content Include="sys_admin_addStaff.aspx" />
+    <Content Include="Sys_admin_home.aspx" />
     <Content Include="Web.config" />
     <Content Include="sign_up.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doctor.Master.cs">
+      <DependentUpon>Doctor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doctor.Master.designer.cs">
+      <DependentUpon>Doctor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="doctor_home.aspx.cs">
+      <DependentUpon>doctor_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doctor_home.aspx.designer.cs">
+      <DependentUpon>doctor_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doctor_viewPatients.aspx.cs">
+      <DependentUpon>doctor_viewPatients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doctor_viewPatients.aspx.designer.cs">
+      <DependentUpon>doctor_viewPatients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManager_home.aspx.cs">
+      <DependentUpon>hospitalManager_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hospitalManager_home.aspx.designer.cs">
+      <DependentUpon>hospitalManager_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManager_viewStaff.aspx.cs">
+      <DependentUpon>hospitalManager_viewStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hospitalManager_viewStaff.aspx.designer.cs">
+      <DependentUpon>hospitalManager_viewStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital_Manager.Master.cs">
+      <DependentUpon>Hospital_Manager.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital_Manager.Master.designer.cs">
+      <DependentUpon>Hospital_Manager.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Nurse.Master.cs">
+      <DependentUpon>Nurse.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nurse.Master.designer.cs">
+      <DependentUpon>Nurse.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Nurse_home.aspx.cs">
+      <DependentUpon>Nurse_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nurse_home.aspx.designer.cs">
+      <DependentUpon>Nurse_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nurse_viewPatient.aspx.cs">
+      <DependentUpon>nurse_viewPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nurse_viewPatient.aspx.designer.cs">
+      <DependentUpon>nurse_viewPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.Master.cs">
+      <DependentUpon>Patient.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patient.Master.designer.cs">
+      <DependentUpon>Patient.Master</DependentUpon>
+    </Compile>
+    <Compile Include="patient_Home.aspx.cs">
+      <DependentUpon>patient_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="patient_Home.aspx.designer.cs">
+      <DependentUpon>patient_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="patient_view_doctor.aspx.cs">
+      <DependentUpon>patient_view_doctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="patient_view_doctor.aspx.designer.cs">
+      <DependentUpon>patient_view_doctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist.Master.cs">
+      <DependentUpon>Pharmacist.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pharmacist.Master.designer.cs">
+      <DependentUpon>Pharmacist.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pharmacist_home.aspx.cs">
+      <DependentUpon>pharmacist_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pharmacist_home.aspx.designer.cs">
+      <DependentUpon>pharmacist_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pharmacist_viewMedicine.aspx.cs">
+      <DependentUpon>pharmacist_viewMedicine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pharmacist_viewMedicine.aspx.designer.cs">
+      <DependentUpon>pharmacist_viewMedicine.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sign_in.aspx.cs">
       <DependentUpon>sign_in.aspx</DependentUpon>
@@ -92,6 +210,13 @@
     <Compile Include="sign_in.aspx.designer.cs">
       <DependentUpon>sign_in.aspx</DependentUpon>
     </Compile>
+    <Compile Include="sign_in_patient.aspx.cs">
+      <DependentUpon>sign_in_patient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sign_in_patient.aspx.designer.cs">
+      <DependentUpon>sign_in_patient.aspx</DependentUpon>
+    </Compile>
     <Compile Include="sign_up.aspx.cs">
       <DependentUpon>sign_up.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,9 +224,36 @@
     <Compile Include="sign_up.aspx.designer.cs">
       <DependentUpon>sign_up.aspx</DependentUpon>
     </Compile>
+    <Compile Include="System_Admin.Master.cs">
+      <DependentUpon>System_Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Admin.Master.designer.cs">
+      <DependentUpon>System_Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sys_admin_addStaff.aspx.cs">
+      <DependentUpon>sys_admin_addStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sys_admin_addStaff.aspx.designer.cs">
+      <DependentUpon>sys_admin_addStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_admin_home.aspx.cs">
+      <DependentUpon>Sys_admin_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys_admin_home.aspx.designer.cs">
+      <DependentUpon>Sys_admin_home.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Doctor.Master" />
+    <Content Include="Hospital_Manager.Master" />
+    <Content Include="Nurse.Master" />
     <None Include="packages.config" />
+    <Content Include="Pharmacist.Master" />
+    <Content Include="System_Admin.Master" />
+    <Content Include="Patient.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

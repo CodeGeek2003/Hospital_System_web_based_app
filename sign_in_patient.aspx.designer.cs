@@ -11,17 +11,17 @@ namespace Hospital_System
 {
 
 
-    public partial class sign_in
+    public partial class sign_in_patient
     {
 
         /// <summary>
-        /// form1 control.
+        /// form2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
 
         /// <summary>
         /// Label7 control.
@@ -33,13 +33,13 @@ namespace Hospital_System
         protected global::System.Web.UI.WebControls.Label Label7;
 
         /// <summary>
-        /// txtUser control.
+        /// txtSSN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUser;
+        protected global::System.Web.UI.WebControls.TextBox txtSSN;
 
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -60,13 +60,13 @@ namespace Hospital_System
         protected global::System.Web.UI.WebControls.Label Label8;
 
         /// <summary>
-        /// txtPassword control.
+        /// txtDoB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtDoB;
 
         /// <summary>
         /// RequiredFieldValidator2 control.
